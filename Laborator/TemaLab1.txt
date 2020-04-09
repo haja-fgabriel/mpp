@@ -1,0 +1,9 @@
+               Tema  in timpul laboratorului
+
+Pentru una dintre temele de la laboratorul de  MAP  fara interfata grafica (la alegerea voastra) faceti urmatoarele:
+-creati un proiect Gradle
+-folosind Gradle creati fisierul jar executabil asociat
+-scrieti cel putin doua teste automate (folosind junit) si rulati-le folosind Gradle
+ 
+
+	

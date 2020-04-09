@@ -1,0 +1,13 @@
+         Client Web servicii REST
+
+Dezvoltati o aplicatie  web care permite vizualizarea tuturor resurselor de tipul entitatii primite la tema 7, respectiv adaugarea si stergerea unei noi resurse, folosind serviciile Rest de la tema 7.
+
+ Pentru dezvoltarea aplicatiei web puteti o tehnologie la alegerea voastra, care sa nu fie bazata pe Java sau .NET. 
+
+(Puteti folosi ReactJS, AngularJS, PHP, etc.  dar nu puteti folosi JSP, Servlet sau ASP.NET).
+
+Termen de predare: 
+
+Informatica germana an 3 - saptamana 12
+
+Informatica romana si germana an 2 - saptamana 13

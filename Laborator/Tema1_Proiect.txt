@@ -1,0 +1,9 @@
+            Model si repository 
+
+Pentru problema aleasa in laboratorul 1 din ProblemeLab.pdf  proiectati si implementati (in Java si C#) partea de model si repository folosind baze de date relationale. La repository trebuie sa folositi jurnalizare, iar informatiile pentru conectarea la baze de date se vor prelua dintr-un fisier de configurare.
+
+
+Termene de predare :
+ -saptamana 2: diagrama de clase a solutiei pentru problema aleasa (pe foaie sau folosind un instrument CASE).
+ -saptamana 3: implementarea in Java.
+ -saptamana 4: implementarea in C#.	

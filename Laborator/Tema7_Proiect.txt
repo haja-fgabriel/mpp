@@ -1,0 +1,23 @@
+		Servicii  REST
+
+1. Proiectati si implementati servicii REST pentru entitatea corespunzatoare problemei de la proiect precizata mai jos (crearea, modificarea, stergerea, cautare dupa id, afisarea tuturor entitatilor disponibile). 
+
+
+Problema 1: Zbor
+Problema 2: Artist
+Problema 3: Proba
+Problema 4: Cursa
+Problema 5: Proba
+Problema 6: Excursie
+Problema 7: Caz caritabil
+Problema 8: Proba
+Problema 9: Proba cu arbitrul asociat
+Problema 10: Meci
+Problema 11: Cursa
+
+2. Testati serviciile folosind un client REST (extensie browser web, ex. Advanced Rest Client, Postman).
+3. Scrieti un program de test in Java.
+4. Scrieti un program de test in in C#.
+
+
+Termen de predare:  saptamana 11

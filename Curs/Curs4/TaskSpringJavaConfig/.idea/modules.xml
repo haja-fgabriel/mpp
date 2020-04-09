@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TaskSpringJavaConfig.iml" filepath="$PROJECT_DIR$/.idea/modules/TaskSpringJavaConfig.iml" group="TaskSpringJavaConfig" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TaskSpringJavaConfig_main.iml" filepath="$PROJECT_DIR$/.idea/modules/TaskSpringJavaConfig_main.iml" group="TaskSpringJavaConfig" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TaskSpringJavaConfig_test.iml" filepath="$PROJECT_DIR$/.idea/modules/TaskSpringJavaConfig_test.iml" group="TaskSpringJavaConfig" />
+    </modules>
+  </component>
+</project>

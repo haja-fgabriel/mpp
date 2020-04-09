@@ -1,0 +1,5 @@
+          ORM
+
+Pentru cel putin o entitate din problema folositi un instrument ORM (Hibernate, Entity Framework, etc) pentru  una dintre solutiile anterioare (la alegerea voastra).
+
+Termen de predare: saptamana 11.

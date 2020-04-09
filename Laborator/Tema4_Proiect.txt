@@ -1,0 +1,5 @@
+               Aplicatii distribuite folosind tehnologii RPC
+
+Modificati una dintre solutiile  de la tema 3  (la alegerea voastra) pentru a folosi una dintre tehnologiile RPC: RMI, Spring Remoting, sau .NET Remoting.
+
+Termen de predare: saptamana 9.

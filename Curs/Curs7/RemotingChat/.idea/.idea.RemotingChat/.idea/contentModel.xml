@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="Chat" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ChatServer.csproj" t="IncludeRecursive" />
+        <e p="ChatServicesImpl.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="StartServer.cs" t="Include" />
+      </e>
+      <e p="ChatClient" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ChatClient.csproj" t="IncludeRecursive" />
+        <e p="ChatClientCtrl.cs" t="Include" />
+        <e p="ChatUserEventArgs.cs" t="Include" />
+        <e p="ChatWindow.cs" t="Include" />
+        <e p="ChatWindow.Designer.cs" t="Include" />
+        <e p="ChatWindow.resx" t="Include" />
+        <e p="LoginWindow.cs" t="Include" />
+        <e p="LoginWindow.Designer.cs" t="Include" />
+        <e p="LoginWindow.resx" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="StartChatClient.cs" t="Include" />
+      </e>
+      <e p="ChatModel" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ChatModel.csproj" t="IncludeRecursive" />
+        <e p="Message.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="User.cs" t="Include" />
+      </e>
+      <e p="ChatPersistance" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ChatPersistence.csproj" t="IncludeRecursive" />
+        <e p="docs" t="Include">
+          <e p="MySqlCommand.xml" t="Include" />
+          <e p="MySqlCommandBuilder.xml" t="Include" />
+          <e p="MySqlConnection.xml" t="Include" />
+          <e p="MySqlConnectionStringBuilder.xml" t="Include" />
+          <e p="MySqlDataAdapter.xml" t="Include" />
+          <e p="MySqlDataReader.xml" t="Include" />
+          <e p="MySqlException.xml" t="Include" />
+          <e p="MySqlHelper.xml" t="Include" />
+          <e p="MySqlParameter.xml" t="Include" />
+          <e p="MySqlParameterCollection.xml" t="Include" />
+          <e p="MySqlTransaction.xml" t="Include" />
+        </e>
+        <e p="FilePersistence.cs" t="Include" />
+        <e p="MockPersistence.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Persistence.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="UserRepository.cs" t="Include" />
+        <e p="UserRepositoryMock.cs" t="Include" />
+        <e p="UserRepositoryTextFile.cs" t="Include" />
+      </e>
+      <e p="ChatServices" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ChatException.cs" t="Include" />
+        <e p="ChatServices.csproj" t="IncludeRecursive" />
+        <e p="IChatObserver.cs" t="Include" />
+        <e p="IChatServices.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="GTKClient" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="GTKChatUserEventArgs.cs" t="Include" />
+        <e p="GTKChatWindow.cs" t="Include" />
+        <e p="GTKClient.csproj" t="IncludeRecursive" />
+        <e p="GTKClientCtrl.cs" t="Include" />
+        <e p="GTKLoginWindow.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="StartGTKClient.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="RemotingChat.sln" t="IncludeFlat" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_RemotingChat.-981453562.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+  </component>
+</project>

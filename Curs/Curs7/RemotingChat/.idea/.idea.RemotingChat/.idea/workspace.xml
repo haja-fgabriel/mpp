@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a65cb245-dbf1-4184-a910-80b1c47725ab" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ChatClient/ChatClientCtrl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatPersistance/UserRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatClient/StartChatClient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatPersistance/UserRepositoryMock.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatClient/ChatWindow.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatPersistance/FilePersistence.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatClient/LoginWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatClient/ChatUserEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatPersistance/MockPersistence.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatClient/ChatWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatPersistance/UserRepositoryTextFile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatPersistance/Persistence.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GTKClient/GTKLoginWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GTKClient/GTKChatWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GTKClient/GTKClientCtrl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GTKClient/GTKChatUserEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatClient/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Chat/StartServer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatClient/Properties/Resources.resx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GTKClient/StartGTKClient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Chat/ChatServicesImpl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatModel/Message.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatModel/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatServices/IChatObserver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatServices/ChatException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ChatServices/IChatServices.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Chat/ChatServerImpl.cs" />
+        <option value="$PROJECT_DIR$/Chat/StartServer.cs" />
+        <option value="$PROJECT_DIR$/ChatPersistance/FilePersistence.cs" />
+        <option value="$PROJECT_DIR$/ChatPersistance/Persistence.cs" />
+        <option value="$PROJECT_DIR$/ChatModel/User.cs" />
+        <option value="$PROJECT_DIR$/ChatClient/ChatWindow.cs" />
+        <option value="$PROJECT_DIR$/ConsoleClient/Program.cs" />
+        <option value="$PROJECT_DIR$/GTKClient/GTKChatWindow.cs" />
+        <option value="$PROJECT_DIR$/GTKClient/GTKChatUserEventArgs.cs" />
+        <option value="$PROJECT_DIR$/GTKClient/Program.cs" />
+        <option value="$PROJECT_DIR$/ChatServices/IChatServices.cs" />
+        <option value="$PROJECT_DIR$/GTKClient/StartGTKClient.cs" />
+        <option value="$PROJECT_DIR$/Chat/ChatServicesImpl.cs" />
+        <option value="$PROJECT_DIR$/GTKClient/GTKClientCtrl.cs" />
+        <option value="$PROJECT_DIR$/GTKClient/GTKLoginWindow.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Z4PJVr9tHoDZBe5tjGCH4UmHcI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
+  </component>
+  <component name="RunManager" selected=".NET Project.GTKClient">
+    <configuration name="ChatClient" type="DotNetProject" factoryName=".NET Project" singleton="false" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/ChatClient/bin/Debug/ChatClient.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ChatClient/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ChatClient/ChatClient.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GTKClient" type="DotNetProject" factoryName=".NET Project" singleton="false" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/GTKClient/bin/Debug/GTKClient.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GTKClient/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/GTKClient/GTKClient.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.8" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="DotNetProject" factoryName=".NET Project" singleton="false">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Chat/bin/Debug/Chat.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Chat/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Chat/ChatServer.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="RunExe" factoryName=".NET Executable" singleton="false">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/ChatClient/bin/Debug/ChatClient.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ChatClient/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build Solution" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue=".NET Executable.Client" />
+      <item itemvalue=".NET Project.Server" />
+      <item itemvalue=".NET Project.ChatClient" />
+      <item itemvalue=".NET Project.GTKClient" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue=".NET Project.GTKClient" />
+        <item itemvalue=".NET Project.ChatClient" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a65cb245-dbf1-4184-a910-80b1c47725ab" name="Default" comment="" />
+      <created>1522566085910</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1522566085910</updated>
+      <workItem from="1522566088144" duration="522000" />
+      <workItem from="1522574295894" duration="55000" />
+      <workItem from="1522651627804" duration="229000" />
+      <workItem from="1522831381399" duration="271000" />
+      <workItem from="1522933019249" duration="320000" />
+      <workItem from="1554743870607" duration="681000" />
+      <workItem from="1554792453333" duration="234000" />
+      <workItem from="1554806190208" duration="295000" />
+      <workItem from="1584095323727" duration="874000" />
+      <workItem from="1584098696623" duration="552000" />
+      <workItem from="1584101625485" duration="164000" />
+      <workItem from="1584101911663" duration="261000" />
+      <workItem from="1584102282155" duration="822000" />
+      <workItem from="1584429986117" duration="1719000" />
+      <workItem from="1584716456069" duration="1387000" />
+      <workItem from="1585666471895" duration="181000" />
+      <workItem from="1586064943017" duration="555000" />
+      <workItem from="1586087293782" duration="1296000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state x="1085" y="268" key="#Server" timestamp="1584095460676">
+      <screen x="0" y="23" width="1920" height="1138" />
+    </state>
+    <state x="1085" y="268" key="#Server/0.23.1920.1138@0.23.1920.1138" timestamp="1584095460676" />
+    <state x="849" y="255" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584717127305">
+      <screen x="0" y="23" width="1920" height="1138" />
+    </state>
+    <state x="849" y="255" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1138@0.23.1920.1138" timestamp="1584717127305" />
+    <state width="1878" height="309" key="GridCell.Tab.0.bottom" timestamp="1586088738493">
+      <screen x="0" y="23" width="1920" height="1138" />
+    </state>
+    <state width="1878" height="309" key="GridCell.Tab.0.bottom/0.23.1920.1138@0.23.1920.1138" timestamp="1586088738493" />
+    <state width="1878" height="309" key="GridCell.Tab.0.center" timestamp="1586088738493">
+      <screen x="0" y="23" width="1920" height="1138" />
+    </state>
+    <state width="1878" height="309" key="GridCell.Tab.0.center/0.23.1920.1138@0.23.1920.1138" timestamp="1586088738493" />
+    <state width="1878" height="309" key="GridCell.Tab.0.left" timestamp="1586088738492">
+      <screen x="0" y="23" width="1920" height="1138" />
+    </state>
+    <state width="1878" height="309" key="GridCell.Tab.0.left/0.23.1920.1138@0.23.1920.1138" timestamp="1586088738492" />
+    <state width="1878" height="309" key="GridCell.Tab.0.right" timestamp="1586088738493">
+      <screen x="0" y="23" width="1920" height="1138" />
+    </state>
+    <state width="1878" height="309" key="GridCell.Tab.0.right/0.23.1920.1138@0.23.1920.1138" timestamp="1586088738493" />
+    <state x="560" y="331" key="Rider.ProjectTemplateDialog.Size" timestamp="1584102959609">
+      <screen x="0" y="23" width="1920" height="1138" />
+    </state>
+    <state x="560" y="331" key="Rider.ProjectTemplateDialog.Size/0.23.1920.1138@0.23.1920.1138" timestamp="1584102959609" />
+    <state x="923" y="230" key="SettingsEditor" timestamp="1584102640066">
+      <screen x="0" y="23" width="1920" height="1138" />
+    </state>
+    <state x="923" y="230" key="SettingsEditor/0.23.1920.1138@0.23.1920.1138" timestamp="1584102640066" />
+    <state x="625" y="276" key="run.anything.popup" timestamp="1584102646505">
+      <screen x="0" y="23" width="1920" height="1138" />
+    </state>
+    <state x="625" y="276" key="run.anything.popup/0.23.1920.1138@0.23.1920.1138" timestamp="1584102646504" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

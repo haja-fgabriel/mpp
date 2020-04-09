@@ -1,0 +1,3 @@
+    Tema Lab in saptamana 6. Aplicatii client-server
+
+Implementati in Java  functionalitatea de autentificare(login) folosind socketuri. Verificarea datelor introduse la autentificare  se face folosind baza de date.

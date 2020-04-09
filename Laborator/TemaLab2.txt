@@ -1,0 +1,8 @@
+		Accesarea unei baze de date relationale
+
+1. Creati o baza de date relationala (MySql/Sqlite/etc, exceptand SqlServer).
+2. Pentru o entitate la alegerea voastra, creati o tabela in baza de date cu cel putin 3 coloane avand o coloana de tip
+numar si o coloana de tip text.
+3. Definiti si implementati in Java sau C#  repository pentru entitatea aleasa folosind baza de date (trebuie sa aveti  cate o operatie de select, delete, insert si update).
+4. Scrieti un program  pentru a testa operatiile din repository.
+5. Folositi jurnalizare pentru operatiile din repository.

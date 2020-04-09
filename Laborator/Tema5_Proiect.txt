@@ -1,0 +1,9 @@
+      Aplicatii distribuite cross-platform
+
+Modificati solutiile de la Tema3_proiect (Networking) astfel incat serverul sa fie dezvoltat intr-un limbaj (la alegerea voastra) si clientul/clientii in celalalt limbaj de programare. Daca serverul este in C#, clientii vor fi in Java, iar daca serverul este in Java clientii vor fi in C#.
+
+Observatii
+1. Studentii care vor folosi pentru aceasta tema una dintre tehnologiile gRPC sau Thrift vor primi un punct in plus la nota finala (cu conditia promovarii anterioare a materiei). Codul sursa al solutiei dezvoltate folosind gRPC sau Thrift trebuie trimis prin email cadrului didactic de la curs.  
+2. Studentii care vor folosi pentru aceasta tema Protocol Buffers (fara gRPC) vor primi 0.5 puncte in plus la nota finala de la laborator.
+
+Termen de predare: saptamana 10.

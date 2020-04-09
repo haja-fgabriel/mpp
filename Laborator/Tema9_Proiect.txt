@@ -1,0 +1,9 @@
+           
+                               Tema facultativa.  Sisteme bazate pe mesaje
+
+Pentru una dintre solutiile client-server anterioare (la alegerea voastra), proiectati si implementati notificarea clientilor folosind un broker de mesaje (ex. activemq, rabbitmq, etc).
+
+Termen de predare: 
+  Saptamana 14
+
+Cine preda aceasta tema  primeste un punct in plus la nota de la laborator.

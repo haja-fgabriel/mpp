@@ -1,0 +1,9 @@
+		Networking
+
+1. Implementati partea de networking (folosind socketuri si threaduri) a proiectului (in Java si C#) si notificarea clientilor.
+
+
+Termene de predare: 
+   - saptamana 7 intr-un limbaj (la alegerea voastra)
+   - saptamana 8 in celalalt limbaj
+  

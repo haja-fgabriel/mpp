@@ -1,0 +1,6 @@
+		Injectarea dependentelor
+
+1. Pentru un proiect Java la alegere (sau proiectul de la MPP) configurati aplicatia folosind Spring pentru injectarea dependentelor. Folositi doua metode pentru configurare (fisier XML si cod Java). Proiectul trebuie sa aiba cel putin 3 bean-uri si intre 2 dintre ele sa existe dependente.
+
+
+ 
