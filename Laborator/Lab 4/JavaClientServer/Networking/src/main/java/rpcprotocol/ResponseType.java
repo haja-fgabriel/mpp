@@ -1,0 +1,5 @@
+package rpcprotocol;
+
+public enum ResponseType {
+    OK,ERROR,NEW_CHILD,LIST_OF_EVENTS,COUNTER_OF_CHILDREN,LIST_OF_CHILDREN,SAVED_CHILD;
+}

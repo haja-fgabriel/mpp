@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'application'
+}
+
+group 'LabJavaClientServer'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+javafx {
+    version = '12'
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName='StartClient'
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.10.0'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.10.0'
+    //compile group: 'javafx', name: 'javafx', version: '2.2.7'
+    compile project(':Model')
+    compile project(':Services')
+    compile project(':Networking')
+}
+
+jar {
+    manifest {
+        attributes ('Main-Class' : 'StartClient')
+    }
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
