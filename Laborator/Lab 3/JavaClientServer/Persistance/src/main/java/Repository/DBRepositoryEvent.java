@@ -15,7 +15,7 @@ import java.util.Properties;
 
 public class DBRepositoryEvent implements IRepositoryEvent<Integer, Event> {
     private DbUtils dbUtils;
-    private static final Logger logger= LogManager.getLogger();
+    private static final Logger logger = LogManager.getLogger();
 
     public DBRepositoryEvent(Properties props) {
         logger.info("Initializing repo props : {}",props);

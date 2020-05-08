@@ -79,7 +79,7 @@ namespace chat.client{
             OnUserEvent(userArgs);
             //sends the message to the server
             User receiver=new User(id);
-            Message message=new Message(currentUser,receiver, txt);
+            Message message=new  Message(currentUser,receiver, txt);
             server.sendMessage(message);
         }
     }

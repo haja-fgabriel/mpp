@@ -32,6 +32,7 @@ namespace chat.network.server
 		private Queue<Response> responses;
 		private volatile bool finished;
         private EventWaitHandle _waitHandle;
+
 		public ChatServerProxy(string host, int port)
 		{
 			this.host = host;
@@ -128,7 +129,7 @@ namespace chat.network.server
 			}
 			catch (Exception e)
 			{
-				throw new ChatException("Error sending object "+e);
+				throw new ChatException("Error sending object " + e);
 			}
 
 		}
@@ -231,19 +232,16 @@ namespace chat.network.server
 					{
                         object response = formatter.Deserialize(stream);
 						Console.WriteLine("response received "+response);
+
 						if (response is UpdateResponse)
 						{
 							 handleUpdate((UpdateResponse)response);
 						}
 						else
 						{
-							
 							lock (responses)
 							{
-                                					
-								 
                                 responses.Enqueue((Response)response);
-                               
 							}
                             _waitHandle.Set();
 						}

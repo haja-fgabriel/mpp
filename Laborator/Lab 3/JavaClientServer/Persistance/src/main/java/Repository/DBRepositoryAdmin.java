@@ -46,7 +46,7 @@ public class DBRepositoryAdmin implements IRepositoryAdmin<String, Admin> {
     @Override
     public Admin find(String username) {
         logger.traceEntry("finding admin with username {} ", username);
-        testSelect();
+        //testSelect();
         Connection con = dbUtils.getConnection();
         Admin e = null;
         try (PreparedStatement preStmt = con.prepareStatement("select * from registeredusers where Username=?")) {

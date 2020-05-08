@@ -37,6 +37,7 @@ namespace chat
     {
         private IChatServices server;
         private ChatClientWorker worker;
+
         public SerialChatServer(string host, int port, IChatServices server) : base(host, port)
             {
                 this.server = server;
