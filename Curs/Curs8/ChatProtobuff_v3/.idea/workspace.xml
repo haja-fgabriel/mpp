@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e85a6743-99b7-457d-9ff5-880a1da19653" name="Default" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="e85a6743-99b7-457d-9ff5-880a1da19653" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d65cb16c-93af-454a-9271-ff52184a58d5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d65cb16c-93af-454a-9271-ff52184a58d5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/csharpFiles/ChatProtocolV3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/proto/csharpFiles/ChatProtocolV3.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Laborator/Lab 3/JavaClientServer/Networking/src/main/java/utils/AbsConcurrentServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Laborator/Lab 3/JavaClientServer/Networking/src/main/java/utils/AbstractServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Laborator/Lab 3/JavaClientServer/Networking/src/main/java/utils/RpcConcurrentServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Laborator/Lab 3/JavaClientServer/Server/src/main/java/StartServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Laborator/Lab 3/JavaClientServer/Server/src/main/java/StartServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Laborator/Lab 4/C# Client-server/Client/Forms/MainForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Laborator/Lab 4/C# Client-server/Client/Forms/MainForm.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Laborator/Lab 4/C# Client-server/Networking/Networking.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Laborator/Lab 4/C# Client-server/Networking/Networking.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Laborator/Lab 4/C# Client-server/Server/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Laborator/Lab 4/C# Client-server/Server/App.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Laborator/Lab 4/C# Client-server/Server/SerializedServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Laborator/Lab 4/C# Client-server/Server/SerializedServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Laborator/Lab 4/JavaClientServer/Client/src/main/java/StartClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Laborator/Lab 4/JavaClientServer/Client/src/main/java/StartClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Laborator/Lab 4/JavaClientServer/Networking/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Laborator/Lab 4/JavaClientServer/Networking/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,6 +109,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectId" id="1aFkyW3K5yWFhsulHRege0D0aiq" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -273,13 +290,20 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/proto/test2020" />
-    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -292,25 +316,7 @@
       <recent name="$PROJECT_DIR$/ChatServer/src/main/resources" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Gradle.ChatProtobuff_v3 [clean]">
-    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -403,6 +409,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -429,6 +444,9 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e85a6743-99b7-457d-9ff5-880a1da19653" name="Default" comment="" />
@@ -453,6 +471,8 @@
       <workItem from="1555407852545" duration="953000" />
       <workItem from="1586338990987" duration="422000" />
       <workItem from="1586682310641" duration="2743000" />
+      <workItem from="1589533437473" duration="1200000" />
+      <workItem from="1589535469666" duration="1324000" />
     </task>
     <servers />
   </component>
@@ -461,6 +481,16 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.bat" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1002" y="306" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1589535481721">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="1002" y="306" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.834@0.0.1536.834" timestamp="1589535481721" />
+    <state x="847" y="153" width="611" height="534" key="find.popup" timestamp="1589534528499">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="847" y="153" width="611" height="534" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1589534528499" />
   </component>
   <component name="masterDetails">
     <states>

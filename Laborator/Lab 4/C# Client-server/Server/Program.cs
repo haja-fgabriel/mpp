@@ -81,13 +81,20 @@ namespace Server
             Console.ReadLine();
         }
 
+        static void RunProtobufServer()
+        {
+            ProtobufSerializedServer server = new ProtobufSerializedServer("127.0.0.1", 55555, service);
+            server.Start();
+        }
+
         static void Main(string[] args)
         {
             XmlConfigurator.Configure();
             //BasicConfigurator.Configure();
 
             //RunObjectServer();
-            RunRemotingServer();
+            //RunRemotingServer();
+            RunProtobufServer();
 
             //logger.Info("Server started");
         }

@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import protobuf.ProtobufProxy;
 import rpcprotocol.ServerProxy;
 
 import java.io.IOException;
@@ -19,6 +20,9 @@ public class StartClient extends Application {
     private static String defaultServer = "localhost";
     private static Properties clientProps = new Properties();
 
+    public static void main(String[] args) {
+        launch(args);
+    }
 
     public void start(Stage primaryStage) throws Exception {
         System.out.println("In start");
@@ -36,7 +40,8 @@ public class StartClient extends Application {
         System.out.println("Using server IP " + serverIP);
         System.out.println("Using server port " + serverPort);
 
-        IService server = new ServerProxy(serverIP, serverPort);
+        //IService server = new ServerProxy(serverIP, serverPort);
+        IService server = new ProtobufProxy(serverIP, serverPort);
 
         URL resource = getClass().getClassLoader().getResource("View/Login.fxml");
         FXMLLoader loader = new FXMLLoader();

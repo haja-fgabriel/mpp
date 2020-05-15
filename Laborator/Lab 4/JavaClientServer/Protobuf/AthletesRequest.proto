@@ -1,0 +1,24 @@
+syntax="proto3";
+
+package protobuf;
+
+import "AthletesModel.proto";
+ 
+message AthletesRequest {
+	enum RequestType {
+		Unknown = 0;
+		Login = 1;
+		Logout = 2;
+		SaveChild = 3;
+		FilterChildren = 4;
+		GetEvents = 5;
+		CountChildren = 6;
+	}
+	
+	RequestType type = 1;
+	
+	Admin user = 2;
+	Child child = 3;
+	int32 eventID = 4;
+	string data = 5;
+}

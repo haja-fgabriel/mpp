@@ -31,11 +31,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Google.Protobuf, Version=3.11.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.11.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\log4net-2.0.8\bin\net\4.5\release\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.2\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,6 +72,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Dto\AdminDto.cs" />
     <Compile Include="AbstractServer.cs" />
+    <Compile Include="Protocols\Protobuf\AthletesModel.cs" />
+    <Compile Include="Protocols\Protobuf\AthletesRequest.cs" />
+    <Compile Include="Protocols\Protobuf\AthletesResponse.cs" />
+    <Compile Include="Protocols\Protobuf\ProtobufClientWorker.cs" />
+    <Compile Include="Protocols\Protobuf\ProtobufUtils.cs" />
+    <Compile Include="Protocols\Protobuf\ProtoServerProxy.cs" />
     <Compile Include="Utils\Parser.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +92,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Protocols\DotNetRemoting\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

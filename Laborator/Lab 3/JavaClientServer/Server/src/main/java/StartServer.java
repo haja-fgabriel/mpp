@@ -5,8 +5,7 @@ import Repository.*;
 import Service.Service;
 import Services.IService;
 
-import utils.AbstractServer;
-import utils.RpcConcurrentServer;
+import rpcprotocol.RpcConcurrentServer;
 import utils.ServerException;
 
 import java.io.IOException;

@@ -7,6 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Networking;
 using Networking.Protocols.Object;
+using Networking.Protocols.Protobuf;
 using Services;
 
 namespace Server
@@ -25,6 +26,24 @@ namespace Server
         protected override Thread CreateWorker(TcpClient client)
         {
             worker = new ClientWorker(service, client);
+            return new Thread(new ThreadStart(worker.Run));
+        }
+    }
+
+    public class ProtobufSerializedServer : ConcurrentServer
+    {
+        private IService service;
+        private ProtobufClientWorker worker;
+
+        public ProtobufSerializedServer(string host, int port, IService service)
+            : base(host, port)
+        {
+            this.service = service;
+        }
+
+        protected override Thread CreateWorker(TcpClient client)
+        {
+            worker = new ProtobufClientWorker(service, client);
             return new Thread(new ThreadStart(worker.Run));
         }
     }

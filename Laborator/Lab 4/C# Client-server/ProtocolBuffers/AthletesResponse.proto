@@ -1,0 +1,26 @@
+syntax="proto3";
+
+package Networking.Protocols.Protobuf;
+
+import "AthletesModel.proto";
+
+message AthletesResponse {
+	enum ResponseType {
+		Unknown = 0;
+		Ok = 1;
+		Error = 2;
+		NewChild = 3;
+		ListOfEvents = 4;
+		CounterOfChildren = 5;
+		ListOfChildren = 6;
+		SavedChild = 7;
+	}
+	
+	ResponseType type = 1;
+	
+	string error = 2;
+	Child child = 3;
+	repeated Event listOfEvents = 4;
+	int32 childCount = 5;
+	repeated Child listOfChildren = 6;
+}

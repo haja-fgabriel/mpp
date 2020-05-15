@@ -248,7 +248,7 @@
             // 
             this.probe1ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.probe1ComboBox.FormattingEnabled = true;
-            this.probe1ComboBox.Location = new System.Drawing.Point(132, 78);
+            this.probe1ComboBox.Location = new System.Drawing.Point(132, 77);
             this.probe1ComboBox.Name = "probe1ComboBox";
             this.probe1ComboBox.Size = new System.Drawing.Size(123, 24);
             this.probe1ComboBox.TabIndex = 2;
@@ -257,7 +257,7 @@
             // 
             this.probe2ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.probe2ComboBox.FormattingEnabled = true;
-            this.probe2ComboBox.Location = new System.Drawing.Point(132, 113);
+            this.probe2ComboBox.Location = new System.Drawing.Point(132, 114);
             this.probe2ComboBox.Name = "probe2ComboBox";
             this.probe2ComboBox.Size = new System.Drawing.Size(123, 24);
             this.probe2ComboBox.TabIndex = 2;
