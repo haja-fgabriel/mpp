@@ -78,6 +78,7 @@
     <Compile Include="Protocols\Protobuf\ProtobufClientWorker.cs" />
     <Compile Include="Protocols\Protobuf\ProtobufUtils.cs" />
     <Compile Include="Protocols\Protobuf\ProtoServerProxy.cs" />
+    <Compile Include="Protocols\Web\WebClientWorker.cs" />
     <Compile Include="Utils\Parser.cs" />
   </ItemGroup>
   <ItemGroup>

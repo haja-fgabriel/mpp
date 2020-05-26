@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DatabaseModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="8.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="people">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Age" Type="int" />
+          <Property Name="Probe1" Type="int" />
+          <Property Name="Probe2" Type="int" />
+        </EntityType>
+        <EntityType Name="probes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Distance" Type="int" Nullable="false" />
+          <Property Name="Date" Type="datetime" Precision="0" />
+          <Property Name="AgeMin" Type="int" />
+          <Property Name="AgeMax" Type="int" />
+        </EntityType>
+        <EntityType Name="registeredusers">
+          <Key>
+            <PropertyRef Name="Username" />
+          </Key>
+          <Property Name="Username" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Name" Type="text" />
+          <Property Name="Password" Type="text" />
+        </EntityType>
+        <Association Name="fk_probe1">
+          <End Role="probes" Type="Self.probes" Multiplicity="0..1" />
+          <End Role="people" Type="Self.people" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="probes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="people">
+              <PropertyRef Name="Probe1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_probe2">
+          <End Role="probes" Type="Self.probes" Multiplicity="0..1" />
+          <End Role="people" Type="Self.people" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="probes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="people">
+              <PropertyRef Name="Probe2" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DatabaseModelStoreContainer">
+          <EntitySet Name="people" EntityType="Self.people" Schema="initialdatabase" store:Type="Tables" />
+          <EntitySet Name="probes" EntityType="Self.probes" Schema="initialdatabase" store:Type="Tables" />
+          <EntitySet Name="registeredusers" EntityType="Self.registeredusers" Schema="initialdatabase" store:Type="Tables" />
+          <AssociationSet Name="fk_probe1" Association="Self.fk_probe1">
+            <End Role="probes" EntitySet="probes" />
+            <End Role="people" EntitySet="people" />
+          </AssociationSet>
+          <AssociationSet Name="fk_probe2" Association="Self.fk_probe2">
+            <End Role="probes" EntitySet="probes" />
+            <End Role="people" EntitySet="people" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="person">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Age" Type="Int32" />
+          <Property Name="Probe1" Type="Int32" />
+          <Property Name="Probe2" Type="Int32" />
+          <NavigationProperty Name="probe" Relationship="Self.fk_probe1" FromRole="people" ToRole="probes" />
+          <NavigationProperty Name="probe3" Relationship="Self.fk_probe2" FromRole="people" ToRole="probes" />
+        </EntityType>
+        <EntityType Name="probe">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Distance" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" />
+          <Property Name="AgeMin" Type="Int32" />
+          <Property Name="AgeMax" Type="Int32" />
+          <NavigationProperty Name="people" Relationship="Self.fk_probe1" FromRole="probes" ToRole="people" />
+          <NavigationProperty Name="people1" Relationship="Self.fk_probe2" FromRole="probes" ToRole="people" />
+        </EntityType>
+        <EntityType Name="registereduser">
+          <Key>
+            <PropertyRef Name="Username" />
+          </Key>
+          <Property Name="Username" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="fk_probe1">
+          <End Role="probes" Type="Self.probe" Multiplicity="0..1" />
+          <End Role="people" Type="Self.person" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="probes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="people">
+              <PropertyRef Name="Probe1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_probe2">
+          <End Role="probes" Type="Self.probe" Multiplicity="0..1" />
+          <End Role="people" Type="Self.person" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="probes">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="people">
+              <PropertyRef Name="Probe2" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="AthletesDbContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="people" EntityType="Self.person" />
+          <EntitySet Name="probes" EntityType="Self.probe" />
+          <EntitySet Name="registeredusers" EntityType="Self.registereduser" />
+          <AssociationSet Name="fk_probe1" Association="Self.fk_probe1">
+            <End Role="probes" EntitySet="probes" />
+            <End Role="people" EntitySet="people" />
+          </AssociationSet>
+          <AssociationSet Name="fk_probe2" Association="Self.fk_probe2">
+            <End Role="probes" EntitySet="probes" />
+            <End Role="people" EntitySet="people" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DatabaseModelStoreContainer" CdmEntityContainer="AthletesDbContext">
+          <EntitySetMapping Name="people">
+            <EntityTypeMapping TypeName="DatabaseModel.person">
+              <MappingFragment StoreEntitySet="people">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Probe1" ColumnName="Probe1" />
+                <ScalarProperty Name="Probe2" ColumnName="Probe2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="probes">
+            <EntityTypeMapping TypeName="DatabaseModel.probe">
+              <MappingFragment StoreEntitySet="probes">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="AgeMin" ColumnName="AgeMin" />
+                <ScalarProperty Name="AgeMax" ColumnName="AgeMax" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="registeredusers">
+            <EntityTypeMapping TypeName="DatabaseModel.registereduser">
+              <MappingFragment StoreEntitySet="registeredusers">
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

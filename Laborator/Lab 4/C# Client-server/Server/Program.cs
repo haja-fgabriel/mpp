@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Persistence.Repository;
 using Persistence.Repository.Database;
+using Persistence.Repository.EntityFramework;
 using Model;
 using System.Configuration;
 using Server.Service;
@@ -18,54 +19,38 @@ using System.Runtime.Remoting.Channels.Tcp;
 
 namespace Server
 {
-    class TestObserver : IObserver
-    {
-        public void ChildSaved(Child c)
-        {
-            Console.WriteLine("[DEBUG] Observer notification working\n");
-        }
-    }
-
-    class OtherTests
-    {
-        public static void Run(IService service)
-        {
-            IObserver obs = new TestObserver();
-            service.Login("root", "alpine", obs);
-            try
-            {
-                service.Login("root", "alpine", new TestObserver());
-            }
-            catch (Error e)
-            {
-                _ = (e.Message);
-            }
-
-            service.Logout("root", obs);
-            service.Logout("root", obs);
-            service.Logout("evilRoot", obs);
-
-            service.CountChildren(1);
-        }
-    }
-
     class Program
     {
         private static ILog logger = LogManager.GetLogger(typeof(Program));
-        private static IRepositoryAdmin<string, Admin> admins = new DbRepositoryAdmin(ConfigurationManager.AppSettings);
-        private static IRepositoryChild<int, Child> children = new DbRepositoryChild(ConfigurationManager.AppSettings);
-        private static IRepositoryEvent<int, Event> events = new DbRepositoryEvent(ConfigurationManager.AppSettings);
-        private static ConcurrentService service = new ConcurrentService(admins, children, events);
+        private static IRepositoryAdmin<string, Admin> admins;
+        private static IRepositoryChild<int, Child> children;
+        private static IRepositoryEvent<int, Event> events;
+
+        private static ConcurrentService service;
         private static BinaryServerFormatterSinkProvider serverProvider = new BinaryServerFormatterSinkProvider();
         private static BinaryClientFormatterSinkProvider clientProvider = new BinaryClientFormatterSinkProvider();
 
-        static void RunObjectServer()
+        private static void PrepareEntityFrameworkRepositories()
+        {
+            admins = new EntityFrameworkRepositoryAdmin();
+            children = new EntityFrameworkRepositoryChild();
+            events = new EntityFrameworkRepositoryEvent();
+        }
+
+        private static void PrepareRepositories()
+        {
+            admins = new DbRepositoryAdmin(ConfigurationManager.AppSettings);
+            children = new DbRepositoryChild(ConfigurationManager.AppSettings);
+            events = new DbRepositoryEvent(ConfigurationManager.AppSettings);
+        }
+
+        private static void RunObjectServer()
         {
             SerializedServer server = new SerializedServer("127.0.0.1", 55555, service);
             server.Start();
         }
 
-        static void RunRemotingServer()
+        private static void RunRemotingServer()
         {
             serverProvider.TypeFilterLevel = System.Runtime.Serialization.Formatters.TypeFilterLevel.Full;
             IDictionary properties = new Hashtable();
@@ -81,7 +66,7 @@ namespace Server
             Console.ReadLine();
         }
 
-        static void RunProtobufServer()
+        private static void RunProtobufServer()
         {
             ProtobufSerializedServer server = new ProtobufSerializedServer("127.0.0.1", 55555, service);
             server.Start();
@@ -91,6 +76,10 @@ namespace Server
         {
             XmlConfigurator.Configure();
             //BasicConfigurator.Configure();
+
+            PrepareEntityFrameworkRepositories();
+
+            service = new ConcurrentService(admins, children, events);
 
             //RunObjectServer();
             //RunRemotingServer();

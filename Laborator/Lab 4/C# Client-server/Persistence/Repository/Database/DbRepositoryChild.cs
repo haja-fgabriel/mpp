@@ -45,7 +45,7 @@ namespace Persistence.Repository.Database
         public List<Child> Filter(int idEv, int ageMin, int ageMax)
         {
             logger.Debug("Finding children at the event with id " + idEv + " with ageMin " 
-                + ageMin + "and ageMax " + ageMax + "...");
+                + ageMin + " and ageMax " + ageMax + "...");
             MySqlConnection connection = (MySqlConnection)dbUtils.GetConnection();
 
             MySqlCommand selectCommand = new MySqlCommand("select * from People where " +

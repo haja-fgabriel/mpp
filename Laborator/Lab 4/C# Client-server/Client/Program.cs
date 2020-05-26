@@ -17,23 +17,38 @@ namespace Client
         private static BinaryServerFormatterSinkProvider serverProvider = new BinaryServerFormatterSinkProvider();
         private static BinaryClientFormatterSinkProvider clientProvider = new BinaryClientFormatterSinkProvider();
 
+        private static IService server;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         /// 
-        [STAThread]
-        static void Main()
+
+        private static void ConnectToRemotingServer()
         {
-            //IService server = new ServerProxy("127.0.0.1", 55555);
-            // TODO replace with remoting server
             IDictionary properties = new Hashtable();
             properties["port"] = 0;
 
             TcpChannel channel = new TcpChannel(properties, clientProvider, serverProvider);
             ChannelServices.RegisterChannel(channel, false);
-            IService server = (IService)Activator.GetObject(typeof(IService), "tcp://localhost:55555/Athletes");
+            server = (IService)Activator.GetObject(typeof(IService), "tcp://localhost:55555/Athletes");
+
+        }
+
+        private static void ConnectToObjectServer()
+        {
+            server = new ServerProxy("127.0.0.1", 55555);
+        }
+
+        [STAThread]
+        static void Main()
+        {
+            // TODO replace with remoting server
+
+            ConnectToRemotingServer();
 
             ClientController controller = new ClientController(server);
+
                 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

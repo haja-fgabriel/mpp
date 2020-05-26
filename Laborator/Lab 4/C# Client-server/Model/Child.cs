@@ -18,6 +18,10 @@ namespace Model
         {
         }
 
+        public Child(int id)
+        {
+        }
+
         public Child(int id, string name, int age, int idEvent1, int idEvent2)
         {
             ID = id;
